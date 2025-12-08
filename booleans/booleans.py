@@ -6,7 +6,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newBoolean = None
+newBoolean = True
 
 ########################################################################
 
@@ -27,7 +27,7 @@ scoreToPass = 75
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-studentPasses = None
+studentPasses = (examScore1 > scoreToPass) or (examScore2 > scoreToPass)
 
 ########################################################################
 
@@ -58,7 +58,7 @@ student2Chuck = random.randint(4, 6)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-numberOfWood = None
+numberOfWood = 
 numberOfChuck = None
 
 bothAtLeastOneCorrect = None
