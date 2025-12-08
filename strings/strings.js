@@ -209,7 +209,7 @@ let replaceMe = "John just moved to Montreal. John will be meeting his roomate s
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let replacedString = replaceMe.replace(/John/g, "Micheal")
+let replacedString = replaceMe.replace(/John/g, "Michael")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -245,7 +245,8 @@ let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-
+testString1 = testString1.toUpperCase()
+testString1 = testString1.replace(/ /g, "-")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -265,8 +266,14 @@ let targetString2 = "i am the second best, you are the first best!"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-
-
+let temp = "__TEMP__"
+testString2 = testString2.replace(".", ",")
+testString2 = testString2.replace(/sentence/g, "best")
+testString2 = testString2.replace("first", temp)
+                          .replace("second", "first")
+                          .replace(temp, "second")
+testString2 = testString2.toLowerCase()
+testString2 = testString2 + "!"
 ////////////////////////////////////////////////////////////////////////
 
 
@@ -285,7 +292,7 @@ let escapedString
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-// escapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
+escapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
 
 ////////////////////////////////////////////////////////////////////////
 
