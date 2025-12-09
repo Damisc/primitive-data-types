@@ -94,7 +94,10 @@ let secretCode = generateSecretCode()
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let codeIsValid = 
+let correct5thChar = secretCode.charCodeAt(4) >= 65 && secretCode.charCodeAt(4) <= 90
+let correct10thChar = secretCode.charCodeAt(9) >= 48 && secretCode.charCodeAt(9) <= 57
+let correctlength = secretCode.length === 15 
+let codeIsValid = (correct5thChar === true) && (correct10thChar === true) && (correctlength === true)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -115,13 +118,13 @@ let truthy1, truthy2
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-// falsy1 = Boolean("")
-// falsy2 = Boolean(0)
-// falsy3 = Boolean(undefined)
-// falsy4 = Boolean(null)
+falsy1 = Boolean("")
+falsy2 = Boolean(0)
+falsy3 = Boolean(undefined)
+falsy4 = Boolean(null)
 
-// truthy1 = Boolean("non-empty string")
-// truthy2 = Boolean(1)
+truthy1 = Boolean("non-empty string")
+truthy2 = Boolean(1)
 
 ////////////////////////////////////////////////////////////////////////
 
