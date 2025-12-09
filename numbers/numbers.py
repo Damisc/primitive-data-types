@@ -177,7 +177,7 @@ import re
 #
 ############### ####### YOUR CODE BELOW THIS LINE ######################
 
-parsedNumber = re.findall(r'-?\d+\.?\d*', parseTheNumber)
+parsedNumber = float(re.findall(r"[-+]?\d*\.\d+|\d+", parseTheNumber)[0])
 
 ########################################################################
 

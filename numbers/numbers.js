@@ -141,7 +141,7 @@ let parseTheNumber = "You got a score of 25.5"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let parsedNumber =
+let parsedNumber = parseFloat(parseTheNumber.replace(/[^0-9.]/g, " "))
 
 ////////////////////////////////////////////////////////////////////////
 
