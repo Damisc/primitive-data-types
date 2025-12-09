@@ -6,7 +6,7 @@
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let newBoolean
+let newBoolean = true
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -25,9 +25,9 @@ let dadsHeight = generateRandomNumber(100, 200)
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let momIsTaller
-let dadIsTaller
-let areTheSameHeight
+let momIsTaller = momsHeight > dadsHeight
+let dadIsTaller = dadsHeight > momsHeight
+let areTheSameHeight = dadsHeight === momsHeight
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -46,7 +46,7 @@ let studentEssay = generateSudentEssay()
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let notPlagiarised
+let notPlagiarised = !(studentEssay.includes(keyPhrase))
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -68,10 +68,10 @@ let thresholdForTall = 150
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let siblingsAreTall
-let siblingsAreShort
-let atLeastOneIsTall
-let onlyOneIsTall
+let siblingsAreTall = (sistersHeight > thresholdForTall) && (brothersHeight > thresholdForTall)
+let siblingsAreShort = (sistersHeight < thresholdForTall) && (brothersHeight < thresholdForTall)
+let atLeastOneIsTall = (sistersHeight > thresholdForTall) || (brothersHeight > thresholdForTall)
+let onlyOneIsTall = Boolean((sistersHeight > thresholdForTall) ^ (brothersHeight > thresholdForTall))
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -94,7 +94,7 @@ let secretCode = generateSecretCode()
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let codeIsValid
+let codeIsValid = 
 
 ////////////////////////////////////////////////////////////////////////
 

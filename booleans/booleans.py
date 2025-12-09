@@ -6,7 +6,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newBoolean = True
+newBoolean = False
 
 ########################################################################
 
@@ -58,10 +58,10 @@ student2Chuck = random.randint(4, 6)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-numberOfWood = 
-numberOfChuck = None
+numberOfWood = tongueTwiser.count("wood ") + tongueTwiser.count("wood.") + tongueTwiser.count("wood?") + tongueTwiser.count("wood,")
+numberOfChuck = tongueTwiser.count(" chuck")
 
-bothAtLeastOneCorrect = None
+bothAtLeastOneCorrect = (student1Wood == numberOfWood or student1Chuck == numberOfChuck) and (student2Wood == numberOfWood or student2Chuck == numberOfChuck)
 
 ########################################################################
 
@@ -83,12 +83,12 @@ truthy1 = truthy2 = None
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-# falsy1 = bool("")
-# falsy2 = bool(0)
-# falsy3 = bool(None)
+falsy1 = bool("")
+falsy2 = bool(0)
+falsy3 = bool(None)
 
-# truthy1 = bool("non-empty string")
-# truthy2 = bool(1)
+truthy1 = bool("non-empty string")
+truthy2 = bool(1)
 
 ########################################################################
 
